@@ -184,7 +184,7 @@ h4 {
   border: 0;
   color: var(--text-color--secondary);
   cursor: pointer;
-  font-family: 'SangbleuSans', Helvetica, Arial, sans-serif;
+  font-family: "SangbleuSans", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   padding: 1.2rem 2rem;
   transition: 0.3s;
@@ -208,54 +208,83 @@ h4 {
 }
 
 /* Links */
-.link{
-  position: relative;
+.link {
   color: var(--text-color--primary);
-  font-family: 'SangbleuSans' ,Helvetica,Arial,sans-serif;
+  font-family: "SangbleuSans", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
-  text-underline-offset: .4rem;
-  text-decoration-thickness: 1px;
+  position: relative;
 }
 
- .link::before{
-  position: absolute;
-  content: "";
+.link::before {
   background-color: #a9ad65;
-  width: 0;
-  height: 1px;
   bottom: 0;
-  left: 0;
-  transition: .3s;
-  transition-delay: .1s;
-}
-
-.link:hover::before{
-  width: 100%;
-}
-
-.link::after{
-  position: absolute;
   content: "";
-  background-color: #fff;
-  width: 100%;
   height: 1px;
-  bottom: 0;
-  right: 0;
-  transition: .3s;
-}
-
-.link:hover::after{
+  left: 0;
+  position: absolute;
+  transition-delay: 0.1s;
+  transition: 0.3s;
   width: 0;
 }
 
-@media screen and (min-width: 992px){
-  .link{
+.link:hover::before {
+  width: 100%;
+}
+
+.link::after {
+  background-color: #fff;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  right: 0;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.link:hover::after {
+  width: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .link {
     font-size: 1.6rem;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .link{
+  .link {
     font-size: 2rem;
+  }
+}
+
+/* Header */
+.logo {
+  margin-top: 16px;
+}
+
+.header {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.header-extra {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 576px) {
+  .logo {
+    margin-top: 0;
+  }
+
+  .header {
+    align-items: center;
+  }
+
+  .header-extra {
+    flex-direction: row;
   }
 }
