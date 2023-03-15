@@ -176,3 +176,33 @@ h4 {
 .icon-back:hover {
   background-color: rgba(255, 255, 255, 0.16);
 }
+
+/* Buttons */
+.btn {
+  background-color: var(--back-color--primary);
+  border-radius: 30px;
+  border: 0;
+  color: var(--text-color--secondary);
+  cursor: pointer;
+  font-family: 'SangbleuSans', Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  padding: 1.2rem 2rem;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: var(--back-color--secondary);
+}
+
+@media screen and (min-width: 992px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .btn {
+    font-size: 2rem;
+  }
+}
