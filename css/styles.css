@@ -19,8 +19,8 @@
 }
 
 :root {
-  --text-color--primary:#fff;
-  --text-color--secondary: rgb(31,31,31);
+  --text-color--primary: #fff;
+  --text-color--secondary: rgb(31, 31, 31);
   --back-color--primary: #fff;
   --back-color--secondary: rgb(227, 217, 198);
   --back-color-footer: #000;
@@ -37,7 +37,6 @@ html {
 }
 
 body {
-  
 }
 
 a {
@@ -47,44 +46,43 @@ a {
 /* Typography */
 
 @font-face {
-  font-family: 'SangbleuSans';
-  src: url('./fonts/sangbleu-sans-regular-webfont.woff2') format('woff2'),
-       url('./fonts/sangbleu-sans-regular-webfont.woff') format('woff');
-       font-weight: normal;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'GillSans Bold';
-  src: url('./fonts/gill_sans_bold-webfont.woff2') format('woff2'),
-       url('./fonts/gill_sans_bold-webfont.woff') format('woff');
-       font-weight: normal;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'GillSans Medium';
-  src: url('./fonts/gill_sans_medium-webfont.woff2') format('woff2'),
-       url('./fonts/gill_sans_medium-webfont.woff') format('woff');
-       font-weight: normal;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'GillSans Regular';
-  src: url('./fonts/gill_sans-webfont.woff2') format('woff2'),
-       url('./fonts/gill_sans-webfont.woff') format('woff');
-       font-weight: normal;
-       font-style: normal;
-}
-
-@font-face {
-  font-family: 'Tiempos';
-  src: url('./fonts/tiemposheadline-regular-webfont.woff2') format('woff2'),
-       url('./fonts/tiemposheadline-regular-webfont.woff') format('woff');
+  font-family: "SangbleuSans";
+  src: url("./fonts/sangbleu-sans-regular-webfont.woff2") format("woff2"),
+    url("./fonts/sangbleu-sans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
 
+@font-face {
+  font-family: "GillSans Bold";
+  src: url("./fonts/gill_sans_bold-webfont.woff2") format("woff2"),
+    url("./fonts/gill_sans_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GillSans Medium";
+  src: url("./fonts/gill_sans_medium-webfont.woff2") format("woff2"),
+    url("./fonts/gill_sans_medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GillSans Regular";
+  src: url("./fonts/gill_sans-webfont.woff2") format("woff2"),
+    url("./fonts/gill_sans-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tiempos";
+  src: url("./fonts/tiemposheadline-regular-webfont.woff2") format("woff2"),
+    url("./fonts/tiemposheadline-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 h1 {
@@ -96,18 +94,18 @@ h2 {
   font-size: 3.8rem;
 }
 
-h2 .small{
+h2 .small {
   font-size: 3.6rem;
 }
 
 h3 {
   font-size: 1.4rem;
-  color: rgb(31,31,31);
+  color: rgb(31, 31, 31);
 }
 
-h4{
+h4 {
   font-size: 1.6rem;
-  color: rgb(31,31,31);
+  color: rgb(31, 31, 31);
 }
 
 @media (min-width: 992px) {
@@ -120,13 +118,13 @@ h4{
 }
 
 @media (min-width: 1200px) {
-  h2 .small{
+  h2 .small {
     font-size: 4.6rem;
   }
   h3 {
     font-size: 1.8rem;
   }
-  h4{
+  h4 {
     font-size: 2rem;
   }
 }
@@ -148,3 +146,33 @@ h4 {
   text-align: center;
 }
 
+/* Icons */
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.icon--large {
+  width: 172px;
+}
+
+.icon--white {
+  fill: #fff;
+}
+
+.icon-back {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  display: inline-flex;
+  height: 52px;
+  justify-content: center;
+  transition-delay: 0.1s;
+  transition: 0.3s;
+  width: 52px;
+}
+
+.icon-back:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+}
