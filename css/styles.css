@@ -288,3 +288,95 @@ h4 {
     flex-direction: row;
   }
 }
+
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list > li a {
+  color: var(--text-color--primary);
+  font-family: "SangbleuSans", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  transition: 0.3s;
+}
+
+.list > li a:hover {
+  color: #888585;
+}
+
+.list > li {
+  margin-bottom: 2rem;
+}
+
+.list--small > li a {
+  color: rgb(146, 146, 146);
+  font-size: 1.6rem;
+  transition: 0.3s;
+}
+
+.list--small > li a:hover {
+  color: rgb(92, 91, 91);
+}
+
+.list--small > li:last-child {
+  color: rgb(146, 146, 146);
+  font-family: "SangbleuSans", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+.list--menu {
+  text-align: center;
+}
+
+.list--menu > li a:hover {
+  color: var(--text-color--primary);
+}
+
+.menu--large > li a {
+  font-family: "SangbleuSans", Helvetica, Arial, sans-serif;
+  font-size: 3.6rem;
+}
+
+.menu--small > li a {
+  font-family: "GillSans Medium", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.list--menu > li::before {
+  color: #fff;
+  content: "\2022";
+  opacity: 0;
+  position: relative;
+  transition: 0.3s;
+}
+
+.menu--large > li::before {
+  font-size: 20px;
+  left: -10px;
+  top: -6px;
+}
+
+.menu--small > li::before {
+  font-size: 14px;
+  left: -10px;
+  top: 3px;
+}
+
+.list--menu > li:hover::before {
+  opacity: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .list--large {
+    display: inline-block;
+    column-count: 2;
+    column-gap: 20vw;
+  }
+
+  .list--large > li a {
+    font-size: 2.4rem;
+  }
+}
