@@ -1,0 +1,150 @@
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}
+
+:root {
+  --text-color--primary:#fff;
+  --text-color--secondary: rgb(31,31,31);
+  --back-color--primary: #fff;
+  --back-color--secondary: rgb(227, 217, 198);
+  --back-color-footer: #000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Typography */
+
+@font-face {
+  font-family: 'SangbleuSans';
+  src: url('./fonts/sangbleu-sans-regular-webfont.woff2') format('woff2'),
+       url('./fonts/sangbleu-sans-regular-webfont.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSans Bold';
+  src: url('./fonts/gill_sans_bold-webfont.woff2') format('woff2'),
+       url('./fonts/gill_sans_bold-webfont.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSans Medium';
+  src: url('./fonts/gill_sans_medium-webfont.woff2') format('woff2'),
+       url('./fonts/gill_sans_medium-webfont.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSans Regular';
+  src: url('./fonts/gill_sans-webfont.woff2') format('woff2'),
+       url('./fonts/gill_sans-webfont.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('./fonts/tiemposheadline-regular-webfont.woff2') format('woff2'),
+       url('./fonts/tiemposheadline-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+h1 {
+  font-size: 3.8rem;
+  color: #fff;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+h2 .small{
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: rgb(31,31,31);
+}
+
+h4{
+  font-size: 1.6rem;
+  color: rgb(31,31,31);
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 7.2rem;
+  }
+  h2 {
+    font-size: 7.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 .small{
+    font-size: 4.6rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4{
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 9.2rem;
+  }
+  h2 {
+    font-size: 9.2rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 auto;
+  text-align: center;
+}
+
