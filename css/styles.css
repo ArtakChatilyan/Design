@@ -380,3 +380,35 @@ h4 {
     font-size: 2.4rem;
   }
 }
+
+/* Inputs */
+.panel {
+  background: rgb(42, 41, 40);
+  height: 565px;
+  width: 350px;
+  background: linear-gradient(
+    80deg,
+    rgba(42, 41, 40, 1) 0%,
+    rgba(18, 18, 18, 1) 80%
+  );
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.input {
+  background-color: transparent;
+  border: 0;
+  color: var(--text-color--primary);
+  font-family: "GillSans Medium", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  outline: 0;
+  padding: 0.4rem 1rem;
+  width: 100%;
+}
+
+.input-group {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
