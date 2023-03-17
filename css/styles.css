@@ -428,7 +428,7 @@ h4 {
   cursor: pointer;
   height: 85px;
   left: 50%;
-  position: absolute;
+  position: fixed;
   transform: translate(-50%);
   transition: 0.3s;
   width: 85px;
@@ -653,6 +653,18 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
+.panel{
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display: none; 
+}
+
+.panel--expanded{
+  display: flex;
+}
+
 /* Footer */
 .footer {
   background-color: var(--back-color-footer);
@@ -701,8 +713,9 @@ h4 {
   top: -20px;
   width: 100%;
 }
+
 video {
-  object-fit: fill;
+  width: 100%;
 }
 
 .banner-content {

@@ -6,35 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage - Moooi</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+
+
   </head>
-  <body style="background-color: rgb(0, 0, 0)">
+  <body style="background-color: rgb(255, 255, 255)">
     <section class="block-banner">
       <video controls autoplay loop src="./media/front_trailer.mp4" muted>
         Oops! Your browser doesn't support HTML video.
       </video>
       <div class="header">
-        <span class="icon-back" title="aaa">
-          <svg class="icon icon--white">
-            <use xlink:href="./icons/spriteHeader.svg#microphone"></use>
-          </svg>
-        </span>
+        <div class="extra-space">
+          <span class="icon-back" title="Search with voice">
+            <svg class="icon icon--white">
+              <use xlink:href="./icons/spriteHeader.svg#microphone"></use>
+            </svg>
+          </span>
+        </div>
 
         <svg class="icon icon--white icon--large logo">
           <use xlink:href="./icons/spriteHeader.svg#logo"></use>
         </svg>
 
         <div class="header-extra">
-          <span class="icon-back">
+          <span class="icon-back" title="Search">
             <svg class="icon icon--white">
               <use xlink:href="./icons/spriteHeader.svg#search"></use></svg
           ></span>
-          <span class="icon-back">
+          <span class="icon-back" title="Shopping bag">
             <svg class="icon icon--white">
               <use xlink:href="./icons/spriteHeader.svg#bag"></use></svg
           ></span>
-          <span class="icon-back">
+          <span class="icon-back" title="Create mood board">
             <svg class="icon icon--white">
               <use xlink:href="./icons/spriteHeader.svg#board"></use></svg
           ></span>
@@ -42,11 +48,237 @@
       </div>
 
       <div class="banner-content">
-        <p class="banner-info">Design Dreams</p>
-        <h1>Meet Front</h1>
+        <p class="banner-info" data-aos="fade-in" data-aos-easing="ease-in-sine">Design Dreams</p>
+        <h1>
+          <span data-aos="fade-up" data-aos-easing="ease-in-sine">Meet</span>
+          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200">Front</span>
+        </h1>
 
-        <button class="btn">Discover Front's Design Dreams</button>
+        <button class="btn" data-aos="fade-in" data-aos-easing="ease-in-sine">Discover Front's Design Dreams</button>
       </div>
     </section>
+
+    <section class="block-cards">
+      <h3>BROWSE OUR COLLECTION</h3>
+      <div class="grid grid-cols">
+        <article class="card">
+          <img
+            class="card__image"
+            src="./images/Cards/bedding_&_bath.png"
+            alt=""
+          />
+          <h4>Bedding & Bath</h4>
+        </article>
+  
+        <article class="card">
+          <img class="card__image" src="./images/Cards/furniture.png" alt="" />
+          <h4>Bedding & Bath</h4>
+        </article>
+  
+        <article class="card">
+          <img class="card__image" src="./images/Cards/lighting.png" alt="" />
+          <h4>Bedding & Bath</h4>
+        </article>
+  
+        <article class="card">
+          <img class="card__image" src="./images/Cards/home.png" alt="" />
+          <h4>Bedding & Bath</h4>
+        </article>
+  
+        <article class="card">
+          <img
+            class="card__image"
+            src="./images/Cards/wall_&_floor.png"
+            alt=""
+          />
+          <h4>Bedding & Bath</h4>
+        </article>
+  
+        <article class="card">
+          <img
+            class="card__image"
+            src="./images/Cards/body_&_beauty.png"
+            alt=""
+          />
+          <h4>Bedding & Bath</h4>
+        </article>
+      </div>
+    </section>
+
+    <section class="block-history">
+      <img src="./images/restaurant.jpg" alt="" class="history-image" />
+      <div class="history-body">
+        <p class="history-info" data-aos="fade-in" data-aos-easing="ease-in-sine">PRODUCT HISTORY</p>
+        <h2>
+          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="100">Waiting</span>
+          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="150">for</span>
+          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="150">a</span>
+          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200">Star</span>
+          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200">to</span>
+          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="250">Fall</span>
+        </h2>
+        <a href="#" class="link" data-aos="fade-in" data-aos-easing="ease-in-sine">Read the story</a>
+      </div>
+    </section>
+
+    <section class="block-feature">
+      <div class="grid grid-cols2">
+        <img src="./images/discover.jpg" alt="" class="feature-image" data-aos="fade-left" data-aos-easing="ease-in-sine"  data-aos-delay="100"/>
+        <div class="feature-body">
+          <div class="feature-content" data-aos="fade-right" data-aos-easing="ease-in-sine"  data-aos-delay="100">
+            <p class="feature-info">New Episode Out Now!</p>
+            <h2>Discover the Design Dreams podcast</h2>
+            <a href="#" class="link">Read the story</a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="block-cards-extra">
+      <h2>DISCOVER A LIFE EXTRAORDINARY</h2>
+      <p class="card-extra-info">
+        Click on an Interior Mood below to step through The Portal and into A
+        Life Extraordinary.
+      </p>
+      <div class="grid grid-cols-extra">
+        <article class="card-extra">
+          <img
+            class="card-extra__image"
+            src="./images/CardsExtra/scene1.png"
+            alt="" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-in-sine"
+          />
+          <h4>Beauty Blooms</h4>
+        </article>
+  
+        <article class="card-extra">
+          <img
+            class="card-extra__image"
+            src="./images/CardsExtra/scene2.png"
+            alt="" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-in-sine" 
+          />
+          <h4>Defy Gravity</h4>
+        </article>
+  
+        <article class="card-extra">
+          <img
+            class="card-extra__image"
+            src="./images/CardsExtra/scene3.png"
+            alt="" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-in-sine" 
+          />
+          <h4>Divine Dreams</h4>
+        </article>
+  
+        <article class="card-extra">
+          <img
+            class="card-extra__image"
+            src="./images/CardsExtra/scene4.png"
+            alt="" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-in-sine"
+          />
+          <h4>Paper Play</h4>
+        </article>
+      </div>
+    </section>
+
+    <div class="footer">
+      <ul class="list list--large">
+        <li><a href="#">Store Locator</a></li>
+        <li><a href="#">Material Library</a></li>
+        <li><a href="#">Shipping&Returns</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Press Area</a></li>
+        <li><a href="#">Jobs</a></li>
+      </ul>
+  
+  
+      <div class="sub-footer grid grid-cols2">
+        <div class="icon-list">
+          <div class="icon-back">
+            <svg class="icon icon--white">
+              <use xlink:href="./icons/spriteSocial.svg#social1"></use></svg
+            >
+          </div>
+          <div class="icon-back">
+            <svg class="icon icon--white">
+              <use xlink:href="./icons/spriteSocial.svg#social2"></use></svg
+            >
+          </div>
+          
+          <div class="icon-back">
+            <svg class="icon icon--white">
+              <use xlink:href="./icons/spriteSocial.svg#social3"></use></svg
+            >
+          </div>
+          
+          <div class="icon-back">
+            <svg class="icon icon--white">
+              <use xlink:href="./icons/spriteSocial.svg#social4"></use></svg
+            >
+          </div>
+          
+          <div class="icon-back">
+            <svg class="icon icon--white">
+              <use xlink:href="./icons/spriteSocial.svg#social5"></use></svg
+            >
+          </div>
+          <div class="icon-back">
+            <svg class="icon icon--white">
+            <use xlink:href="./icons/spriteSocial.svg#social6"></use>
+          </svg>
+          </div>
+        </div>
+  
+        <ul class="list list--small">
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">General Conditions</a></li>
+          <li><a href="#">Primacy Statements</a></li>
+          <li>&copy;2023 Moooi</li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <div class="panel">
+      <div class="input-group">
+        <svg class="icon icon--white">
+          <use xlink:href="./icons/spriteHeader.svg#search"></use>
+        </svg>
+        <input
+          type="text"
+          class="input"
+          placeholder="Search for products, stories,..."
+        />
+        <svg class="icon icon--white">
+          <use xlink:href="./icons/spriteHeader.svg#microphone"></use>
+        </svg>
+      </div>
+  
+      <ul class="list list--menu menu--large">
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">Gift guide</a></li>
+      </ul>
+  
+      <ul class="list list--menu menu--small">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Store Locator</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="btn-menu">
+      <img src="./images/nav-button.png" alt="menu button" />
+      <div>menu</div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
