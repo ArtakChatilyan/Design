@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage - Moooi</title>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-
-
   </head>
   <body style="background-color: rgb(255, 255, 255)">
     <section class="block-banner">
@@ -48,10 +46,21 @@
       </div>
 
       <div class="banner-content">
-        <p class="banner-info" data-aos="fade-in" data-aos-easing="ease-in-sine">Design Dreams</p>
+        <p
+          class="banner-info"
+          data-aos="fade-in"
+          data-aos-easing="ease-in-sine"
+        >
+          Design Dreams
+        </p>
         <h1>
           <span data-aos="fade-up" data-aos-easing="ease-in-sine">Meet</span>
-          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200">Front</span>
+          <span
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="200"
+            >Front</span
+          >
         </h1>
 
         <button class="btn">Discover Front's Design Dreams</button>
@@ -62,76 +71,193 @@
       <h3>BROWSE OUR COLLECTION</h3>
       <div class="grid grid-cols">
         <article class="card">
-          <img
-            class="card__image"
-            src="./images/Cards/bedding_&_bath.png"
-            alt=""
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./images/Cards/bedding_&_bath.webp"
+            />
+            <source
+              type="image/png"
+              srcset="./images/Cards/bedding_&_bath.png"
+            />
+            <img
+              class="card__image"
+              src="./images/Cards/bedding_&_bath.png"
+              alt=""
+            />
+          </picture>
+
           <h4>Bedding & Bath</h4>
         </article>
-  
+
         <article class="card">
-          <img class="card__image" src="./images/Cards/furniture.png" alt="" />
-          <h4>Bedding & Bath</h4>
+          <picture>
+            <source type="image/webp" srcset="./images/Cards/furniture.webp" />
+            <source type="image/png" srcset="./images/Cards/furniture.png" />
+            <img
+              class="card__image"
+              src="./images/Cards/furniture.png"
+              alt=""
+            />
+          </picture>
+
+          <h4>Furniture</h4>
         </article>
-  
+
         <article class="card">
-          <img class="card__image" src="./images/Cards/lighting.png" alt="" />
-          <h4>Bedding & Bath</h4>
+          <picture>
+            <source type="image/webp" srcset="./images/Cards/lighting.webp" />
+            <source type="image/png" srcset="./images/Cards/lighting.png" />
+            <img class="card__image" src="./images/Cards/lighting.png" alt="" />
+          </picture>
+
+          <h4>Lighintg</h4>
         </article>
-  
+
         <article class="card">
-          <img class="card__image" src="./images/Cards/home.png" alt="" />
-          <h4>Bedding & Bath</h4>
+          <picture>
+            <source type="image/webp" srcset="./images/Cards/home.webp" />
+            <source type="image/png" srcset="./images/Cards/home.png" />
+            <img class="card__image" src="./images/Cards/home.png" alt="" />
+          </picture>
+
+          <h4>Home Accessories</h4>
         </article>
-  
+
         <article class="card">
-          <img
-            class="card__image"
-            src="./images/Cards/wall_&_floor.png"
-            alt=""
-          />
-          <h4>Bedding & Bath</h4>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./images/Cards/wall_&_floor.webp"
+            />
+            <source type="image/png" srcset="./images/Cards/wall_&_floor.png" />
+            <img
+              class="card__image"
+              src="./images/Cards/wall_&_floor.png"
+              alt=""
+            />
+          </picture>
+
+          <h4>Wall & Floor</h4>
         </article>
-  
+
         <article class="card">
-          <img
-            class="card__image"
-            src="./images/Cards/body_&_beauty.png"
-            alt=""
-          />
-          <h4>Bedding & Bath</h4>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./images/Cards/body_&_beauty.webp"
+            />
+            <source
+              type="image/png"
+              srcset="./images/Cards/body_&_beauty.png"
+            />
+            <img
+              class="card__image"
+              src="./images/Cards/body_&_beauty.png"
+              alt=""
+            />
+          </picture>
+
+          <h4>Body & Bauty</h4>
         </article>
       </div>
     </section>
 
     <section class="block-history">
-      <img src="./images/restaurant.jpg" alt="" class="history-image" />
+      <picture class="history-image">
+        <source type="image/webp" srcset="./images/restaurant.webp" />
+        <source type="image/png" srcset="./images/restaurant.jpg" />
+        <img src="./images/restaurant.jpg" alt="" class="history-image" />
+      </picture>
+
       <div class="history-body">
-        <p class="history-info" data-aos="fade-in" data-aos-easing="ease-in-sine">PRODUCT HISTORY</p>
+        <p
+          class="history-info"
+          data-aos="fade-in"
+          data-aos-easing="ease-in-sine"
+        >
+          PRODUCT HISTORY
+        </p>
         <h2>
-          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="100">Waiting</span>
-          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="150">for</span>
-          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="150">a</span>
-          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200">Star</span>
-          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="200">to</span>
-          <span data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-delay="250">Fall</span>
+          <span
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="100"
+            >Waiting</span
+          >
+          <span
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="150"
+            >for</span
+          >
+          <span
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="150"
+            >a</span
+          >
+          <span
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="200"
+            >Star</span
+          >
+          <span
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="200"
+            >to</span
+          >
+          <span
+            data-aos="fade-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="250"
+            >Fall</span
+          >
         </h2>
-        <a href="#" class="link" data-aos="fade-in" data-aos-easing="ease-in-sine">Read the story</a>
+        <a
+          href="#"
+          class="link"
+          data-aos="fade-in"
+          data-aos-easing="ease-in-sine"
+          >Read the story</a
+        >
       </div>
     </section>
 
     <section class="block-feature">
       <div class="grid grid-cols2">
-        <img src="./images/discover.jpg" alt="" class="feature-image" data-aos="fade-left" data-aos-easing="ease-in-sine"  data-aos-delay="100"/>
+        <picture
+          class="feature-image"
+          data-aos="fade-left"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="100"
+        >
+          <source type="image/webp" srcset="./images/discover.webp" />
+          <source type="image/jpg" srcset="./images/discover.jpg" />
+          <img
+            src="./images/discover.jpg"
+            alt=""
+            class="feature-image"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="100"
+          />
+        </picture>
+
         <div class="feature-body">
-          <div class="feature-content" data-aos="fade-right" data-aos-easing="ease-in-sine"  data-aos-delay="100">
+          <div
+            class="feature-content"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="100"
+          >
             <p class="feature-info">New Episode Out Now!</p>
             <h2>Discover the Design Dreams podcast</h2>
             <a href="#" class="link link--dark">Read the story</a>
           </div>
         </div>
-        
       </div>
     </section>
 
@@ -143,50 +269,67 @@
       </p>
       <div class="grid grid-cols-extra">
         <article class="card-extra">
-          
           <div class="image-wrapper">
-            <img
+            <picture class="card-extra__image">
+              <source type="image/webp" srcset="./images/CardsExtra/scene1.webp" />
+              <source type="image/png" srcset="./images/CardsExtra/scene1.png" />
+              <img
               class="card-extra__image"
               src="./images/CardsExtra/scene1.png"
               alt=""
             />
+            </picture>
+            
             <div class="card-extra-title">Beauty Blooms</div>
           </div>
           <h4>Beauty Blooms</h4>
         </article>
-  
+
         <article class="card-extra">
           <div class="image-wrapper">
-            <img
-            class="card-extra__image"
-            src="./images/CardsExtra/scene2.png"
-            alt=""  
-          />
-          <div class="card-extra-title">Defy Gravity</div>
+            <picture class="card-extra__image">
+              <source type="image/webp" srcset="./images/CardsExtra/scene2.webp" />
+              <source type="image/png" srcset="./images/CardsExtra/scene2.png" />
+              <img
+              class="card-extra__image"
+              src="./images/CardsExtra/scene2.png"
+              alt=""
+            />
+            </picture>
+            
+            <div class="card-extra-title">Defy Gravity</div>
           </div>
           <h4>Defy Gravity</h4>
         </article>
-  
+
         <article class="card-extra">
           <div class="image-wrapper">
-            <img
-            class="card-extra__image"
-            src="./images/CardsExtra/scene3.png"
-            alt=""
-          />
-          <div class="card-extra-title">Divine Dreams</div>
+            <picture class="card-extra__image">
+              <source type="image/webp" srcset="./images/CardsExtra/scene3.webp" />
+              <source type="image/png" srcset="./images/CardsExtra/scene3.png" />
+              <img
+              class="card-extra__image"
+              src="./images/CardsExtra/scene3.png"
+              alt=""
+            />
+            </picture>
+            <div class="card-extra-title">Divine Dreams</div>
           </div>
           <h4>Divine Dreams</h4>
         </article>
-  
+
         <article class="card-extra">
           <div class="image-wrapper">
-            <img
-            class="card-extra__image"
-            src="./images/CardsExtra/scene4.png"
-            alt=""
-          />
-          <div class="card-extra-title">Paper Play</div>
+            <picture class="card-extra__image">
+              <source type="image/webp" srcset="./images/CardsExtra/scene4.webp" />
+              <source type="image/png" srcset="./images/CardsExtra/scene4.png" />
+              <img
+              class="card-extra__image"
+              src="./images/CardsExtra/scene4.png"
+              alt=""
+            />
+            </picture>
+            <div class="card-extra-title">Paper Play</div>
           </div>
           <h4>Paper Play</h4>
         </article>
@@ -203,45 +346,44 @@
         <li><a href="#">Press Area</a></li>
         <li><a href="#">Jobs</a></li>
       </ul>
-  
-  
+
       <div class="sub-footer grid grid-cols2">
         <div class="icon-list">
           <div class="icon-back">
             <svg class="icon icon--white">
-              <use xlink:href="./icons/spriteSocial.svg#social1"></use></svg
-            >
+              <use xlink:href="./icons/spriteSocial.svg#social1"></use>
+            </svg>
           </div>
           <div class="icon-back">
             <svg class="icon icon--white">
-              <use xlink:href="./icons/spriteSocial.svg#social2"></use></svg
-            >
+              <use xlink:href="./icons/spriteSocial.svg#social2"></use>
+            </svg>
           </div>
-          
+
           <div class="icon-back">
             <svg class="icon icon--white">
-              <use xlink:href="./icons/spriteSocial.svg#social3"></use></svg
-            >
+              <use xlink:href="./icons/spriteSocial.svg#social3"></use>
+            </svg>
           </div>
-          
+
           <div class="icon-back">
             <svg class="icon icon--white">
-              <use xlink:href="./icons/spriteSocial.svg#social4"></use></svg
-            >
+              <use xlink:href="./icons/spriteSocial.svg#social4"></use>
+            </svg>
           </div>
-          
+
           <div class="icon-back">
             <svg class="icon icon--white">
-              <use xlink:href="./icons/spriteSocial.svg#social5"></use></svg
-            >
+              <use xlink:href="./icons/spriteSocial.svg#social5"></use>
+            </svg>
           </div>
           <div class="icon-back">
             <svg class="icon icon--white">
-            <use xlink:href="./icons/spriteSocial.svg#social6"></use>
-          </svg>
+              <use xlink:href="./icons/spriteSocial.svg#social6"></use>
+            </svg>
           </div>
         </div>
-  
+
         <ul class="list list--small">
           <li><a href="#">Disclaimer</a></li>
           <li><a href="#">Cookie Policy</a></li>
@@ -250,7 +392,6 @@
           <li>&copy;2023 Moooi</li>
         </ul>
       </div>
-      
     </div>
 
     <div class="panel">
@@ -267,13 +408,13 @@
           <use xlink:href="./icons/spriteHeader.svg#microphone"></use>
         </svg>
       </div>
-  
+
       <ul class="list list--menu menu--large">
         <li><a href="#">Products</a></li>
         <li><a href="#">Stories</a></li>
         <li><a href="#">Gift guide</a></li>
       </ul>
-  
+
       <ul class="list list--menu menu--small">
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
@@ -284,7 +425,12 @@
     </div>
 
     <div class="btn-menu">
-      <img src="./images/nav-button.png" alt="menu button" />
+      <picture>
+        <source type="image/webp" srcset="./images/nav-button.webp" />
+        <source type="image/png" srcset="./images/nav-button.png" />
+        <img src="./images/nav-button.png" alt="menu button" />
+      </picture>
+      
       <div>menu</div>
     </div>
 
